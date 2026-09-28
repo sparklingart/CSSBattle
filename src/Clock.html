@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <style>
+        body{
+            background: #D5A06C;
+            margin: 0;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .place{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .place1{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .runde{
+            width: 180px;
+            height:180px;
+            border-radius:50%;
+            position: relative;
+            background: #1E2C5C;
+        }
+        .runde_in{
+            width: 140px;
+            height:140px;
+            border-radius:50%;
+            background: #D5A06C;
+        }
+        .leg{
+            width: 20px;
+            height: 50px;
+            background: #1E2C5C;
+            position: absolute;
+            bottom: -18px;
+            z-index: -1;
+        }
+        .l1{
+            left: 29px; rotate: 45deg;
+        }
+        .l2{
+            right: 29px; rotate: -45deg;
+        }
+        .ohr{
+            width: 60px;
+            height: 32px;
+            background: #1E2C5C;
+            position: absolute;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            top: -17px;
+            z-index: -1;
+        }
+        .o2{
+            right: -5px; rotate: 38deg;
+        }
+        .o1{
+            left: -5px; rotate: -38deg;
+        }
+        .ohr_k{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #D5A06C;
+            position:relative;
+            top: 6px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="runde place">
+    <div class="runde_in"></div>
+    <div class="leg l1"></div>
+    <div class="leg l2"></div>
+    <div class="ohr o1 place1">
+        <div class="ohr_k"></div>
+    </div>
+    <div class="ohr o2 place1">
+        <div class="ohr_k"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
